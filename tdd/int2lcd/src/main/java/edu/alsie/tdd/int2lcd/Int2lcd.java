@@ -33,9 +33,9 @@ public class Int2lcd {
         }
 
         if (isDigitTwo(digit)) {
-            list.add("_ ");
-            list.add("_|");
-            list.add("|_");
+            list.add(" _ ");
+            list.add(" _|");
+            list.add("|_ ");
             return list;
         }
 
@@ -50,6 +50,13 @@ public class Int2lcd {
             list.add("   ");
             list.add("|_|");
             list.add("  |");
+            return list;
+        }
+
+        if (isDigitFive(digit)) {
+            list.add(" _ ");
+            list.add("|_ ");
+            list.add(" _|");
             return list;
         }
 
