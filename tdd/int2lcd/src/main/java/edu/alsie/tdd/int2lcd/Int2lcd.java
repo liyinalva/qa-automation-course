@@ -39,6 +39,13 @@ public class Int2lcd {
             return list;
         }
 
+        if (isDigitThree(digit)) {
+            list.add("_");
+            list.add("_|");
+            list.add("_|");
+            return list;
+        }
+
         list.add("");
         list.add("");
         list.add("");
