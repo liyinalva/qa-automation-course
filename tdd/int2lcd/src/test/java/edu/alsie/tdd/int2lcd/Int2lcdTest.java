@@ -150,4 +150,15 @@ public class Int2lcdTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testConvertDigitNine2Lcd(){
+        Int2lcd int2lcd = new Int2lcd();
+        List<String> expected = new ArrayList<>();
+        expected.add(" _ ");
+        expected.add("|_|");
+        expected.add("  |");
+        List<String> actual = int2lcd.convertDigit2Lcd(9);
+        Assert.assertEquals(expected, actual);
+    }
+
 }

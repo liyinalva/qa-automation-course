@@ -81,6 +81,13 @@ public class Int2lcd {
             return list;
         }
 
+        if (isDigitNine(digit)) {
+            list.add(" _ ");
+            list.add("|_|");
+            list.add("  |");
+            return list;
+        }
+
 
         list.add("");
         list.add("");
