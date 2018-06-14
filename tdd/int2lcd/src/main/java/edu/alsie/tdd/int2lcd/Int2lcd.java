@@ -9,4 +9,6 @@ public class Int2lcd {
     public boolean isDigitThree(int digit) { return digit == 3; }
 
     public boolean isDigitFour(int digit) { return digit == 4; }
+
+    public boolean isDigitFive(int digit) { return digit == 5; }
 }

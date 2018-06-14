@@ -29,4 +29,11 @@ public class Int2lcdTest {
         Assert.assertTrue(int2lcd.isDigitFour(4));
     }
 
+    @Test
+    public void testIfAnumberIsDigitFive() {
+        Int2lcd int2lcd = new Int2lcd();
+        Assert.assertTrue(int2lcd.isDigitFive(5));
+    }
+
+
 }
