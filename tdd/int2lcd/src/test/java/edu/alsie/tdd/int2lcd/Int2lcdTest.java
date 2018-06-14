@@ -17,4 +17,10 @@ public class Int2lcdTest {
         Assert.assertTrue(int2lcd.isDigitTwo(2));
     }
 
+    @Test
+    public void testIfAnumberIsDigitThree() {
+        Int2lcd int2lcd = new Int2lcd();
+        Assert.assertTrue(int2lcd.isDigitThree(3));
+    }
+
 }
