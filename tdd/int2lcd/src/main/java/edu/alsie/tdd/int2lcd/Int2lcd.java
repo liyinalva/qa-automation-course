@@ -67,6 +67,13 @@ public class Int2lcd {
             return list;
         }
 
+        if (isDigitSeven(digit)) {
+            list.add("_ ");
+            list.add(" |");
+            list.add(" |");
+            return list;
+        }
+
         list.add("");
         list.add("");
         list.add("");
