@@ -1,5 +1,8 @@
 package edu.alsie.tdd.int2lcd;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Int2lcd {
 
     public boolean isDigitOne(int digit) { return digit == 1; }
@@ -19,4 +22,19 @@ public class Int2lcd {
     public boolean isDigitEight(int digit) { return digit == 8; }
 
     public boolean isDigitNine(int digit) { return digit == 9; }
+
+    public List<String> convertDigit2Lcd(int digit) {
+        List<String> list = new ArrayList<>();
+        if (isDigitOne(digit)) {
+            list.add(" ");
+            list.add("|");
+            list.add("|");
+            return list;
+        }
+
+        list.add("");
+        list.add("");
+        list.add("");
+        return list;
+    }
 }

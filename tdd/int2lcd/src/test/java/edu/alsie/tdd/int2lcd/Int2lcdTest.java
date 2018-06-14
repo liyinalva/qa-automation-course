@@ -3,6 +3,9 @@ package edu.alsie.tdd.int2lcd;
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Int2lcdTest {
 
     @Test
@@ -57,6 +60,17 @@ public class Int2lcdTest {
     public void testIfAnumberIsDigitNine() {
         Int2lcd int2lcd = new Int2lcd();
         Assert.assertTrue(int2lcd.isDigitNine(9));
+    }
+
+    @Test
+    public void testConvertDigitOne2Lcd(){
+        Int2lcd int2lcd = new Int2lcd();
+        List<String> expected = new ArrayList<>();
+        expected.add(" ");
+        expected.add("|");
+        expected.add("|");
+        List<String> actual = int2lcd.convertDigit2Lcd(1);
+        Assert.assertEquals(expected, actual);
     }
 
 }
