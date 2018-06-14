@@ -41,6 +41,11 @@ public class Int2lcdTest {
         Assert.assertTrue(int2lcd.isDigitSix(6));
     }
 
+    @Test
+    public void testIfAnumberIsDigitSeven() {
+        Int2lcd int2lcd = new Int2lcd();
+        Assert.assertTrue(int2lcd.isDigitSeven(7));
+    }
 
 
 }
