@@ -15,4 +15,6 @@ public class Int2lcd {
     public boolean isDigitSix(int digit) { return digit == 6; }
 
     public boolean isDigitSeven(int digit) { return digit == 7; }
+
+    public boolean isDigitEight(int digit) { return digit == 8; }
 }
