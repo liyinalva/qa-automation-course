@@ -33,16 +33,23 @@ public class Int2lcd {
         }
 
         if (isDigitTwo(digit)) {
-            list.add("_");
+            list.add("_ ");
             list.add("_|");
             list.add("|_");
             return list;
         }
 
         if (isDigitThree(digit)) {
-            list.add("_");
+            list.add("_ ");
             list.add("_|");
             list.add("_|");
+            return list;
+        }
+
+        if (isDigitFour(digit)) {
+            list.add("   ");
+            list.add("|_|");
+            list.add("  |");
             return list;
         }
 

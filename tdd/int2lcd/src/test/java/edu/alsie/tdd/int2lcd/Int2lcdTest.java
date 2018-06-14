@@ -77,7 +77,7 @@ public class Int2lcdTest {
     public void testConvertDigitTwo2Lcd(){
         Int2lcd int2lcd = new Int2lcd();
         List<String> expected = new ArrayList<>();
-        expected.add("_");
+        expected.add("_ ");
         expected.add("_|");
         expected.add("|_");
         List<String> actual = int2lcd.convertDigit2Lcd(2);
@@ -88,10 +88,21 @@ public class Int2lcdTest {
     public void testConvertDigitThree2Lcd(){
         Int2lcd int2lcd = new Int2lcd();
         List<String> expected = new ArrayList<>();
-        expected.add("_");
+        expected.add("_ ");
         expected.add("_|");
         expected.add("_|");
         List<String> actual = int2lcd.convertDigit2Lcd(3);
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testConvertDigitFor2Lcd(){
+        Int2lcd int2lcd = new Int2lcd();
+        List<String> expected = new ArrayList<>();
+        expected.add("   ");
+        expected.add("|_|");
+        expected.add("  |");
+        List<String> actual = int2lcd.convertDigit2Lcd(4);
         Assert.assertEquals(expected, actual);
     }
 
