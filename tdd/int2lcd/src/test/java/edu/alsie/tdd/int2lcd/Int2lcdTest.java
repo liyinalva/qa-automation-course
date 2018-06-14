@@ -35,5 +35,12 @@ public class Int2lcdTest {
         Assert.assertTrue(int2lcd.isDigitFive(5));
     }
 
+    @Test
+    public void testIfAnumberIsDigitSix() {
+        Int2lcd int2lcd = new Int2lcd();
+        Assert.assertTrue(int2lcd.isDigitSix(6));
+    }
+
+
 
 }
