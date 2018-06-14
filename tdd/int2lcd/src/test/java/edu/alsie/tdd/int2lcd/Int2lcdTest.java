@@ -53,4 +53,10 @@ public class Int2lcdTest {
         Assert.assertTrue(int2lcd.isDigitEight(8));
     }
 
+    @Test
+    public void testIfAnumberIsDigitNine() {
+        Int2lcd int2lcd = new Int2lcd();
+        Assert.assertTrue(int2lcd.isDigitNine(9));
+    }
+
 }
