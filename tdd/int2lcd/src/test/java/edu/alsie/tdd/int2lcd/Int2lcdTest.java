@@ -161,4 +161,15 @@ public class Int2lcdTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
+    public void testConvertNumber2Lcd(){
+        Int2lcd int2lcd = new Int2lcd();
+        List<String> expected = new ArrayList<>();
+        expected.add("  _ _     _  _ _  _  _ ");
+        expected.add("| _|_||_||_ |_  ||_||_|");
+        expected.add("||_ _|  | _||_| ||_|  |");
+        List<String> actual = int2lcd.convertNumber2Lcd(123456789);
+        Assert.assertEquals(expected, actual);
+    }
+
 }

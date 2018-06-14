@@ -94,4 +94,28 @@ public class Int2lcd {
         list.add("");
         return list;
     }
+
+    public List<String> convertNumber2Lcd(int number) {
+        List<String> list = new ArrayList<>();
+        list.add("");
+        list.add("");
+        list.add("");
+        int digit;
+        String headDigits;
+        String middleDigits;
+        String footerDigits;
+        while (number > 0) {
+            digit = number % 10;
+            number = number / 10;
+            List<String> digit2Lcd =this.convertDigit2Lcd(digit);
+            headDigits = digit2Lcd.get(0) + list.get(0);
+            middleDigits = digit2Lcd.get(1) + list.get(1);
+            footerDigits = digit2Lcd.get(2) + list.get(2);
+            list.set(0, headDigits);
+            list.set(1, middleDigits);
+            list.set(2, footerDigits);
+        }
+
+        return list;
+    }
 }
